@@ -3,6 +3,8 @@ services:
   develop:
     build: .
     container_name: converter-develop
+    env_file:
+      - dev.env
     environment:
       NODE_ENV: dev
       API_VERSION: v1
