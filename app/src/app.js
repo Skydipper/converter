@@ -7,7 +7,7 @@ const ErrorSerializer = require('./serializers/errorSerializer');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
 
 // instance of koa
-const app = koa();
+const app = new koa();
 
 //if environment is dev then load koa-logger
 if (process.env.NODE_ENV === 'dev') {
