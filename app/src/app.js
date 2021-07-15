@@ -68,4 +68,4 @@ const serverInstance = server.listen(port, function () {
 
 logger.info('Server started in port:' + port);
 
-module.exports = serverInstance;
+module.exports = server;

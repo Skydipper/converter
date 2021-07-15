@@ -4,3 +4,4 @@ npm-debug.log
 privatekey.pem
 /.nyc_output/
 /coverage/
+*.env
