@@ -13,8 +13,7 @@ RUN yarn global add grunt-cli bunyan
 
 RUN mkdir -p /opt/$NAME
 COPY package.json /opt/$NAME/package.json
-RUN cd /opt/$NAME && npm install
-
+RUN cd /opt/$NAME && yarn install --frozen-lockfile
 
 COPY entrypoint.sh /opt/$NAME/entrypoint.sh
 COPY config /opt/$NAME/config
