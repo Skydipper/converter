@@ -38,7 +38,7 @@ app.use(function* (next) {
     this.response.type = 'application/vnd.api+json';
 });
 
-app.use(require('routes/api/v1/convertRouter').middleware());
+app.use(require('./routes/api/v1/convertRouter').middleware());
 
 //Instance of http module
 const server = require('http').Server(app.callback());
