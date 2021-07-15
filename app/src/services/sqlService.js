@@ -1,11 +1,11 @@
 'use strict';
 
 var simpleSqlParser = require('simple-sql-parser');
-var logger = require('logger');
+var logger = require('../logger');
 var JSONAPIDeserializer = require('jsonapi-serializer').Deserializer;
 const Sql2json = require('sql2json').sql2json;
 const Json2sql = require('sql2json').json2sql;
-const GeoStoreNotFound = require('errors/geoStoreNotFound');
+const GeoStoreNotFound = require('../errors/geoStoreNotFound');
 
 var deserializer = function (obj) {
   return function (callback) {

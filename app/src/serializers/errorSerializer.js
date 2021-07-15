@@ -1,10 +1,5 @@
 'use strict';
 
-var logger = require('logger');
-
-
-
-
 class ErrorSerializer {
 
     static serializeValidationError(data, typeParam) {

@@ -1,9 +1,9 @@
-const logger = require('logger');
+const logger = require('./logger');
 const koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const config = require('config');
 const koaLogger = require('koa-logger');
-const ErrorSerializer = require('serializers/errorSerializer');
+const ErrorSerializer = require('./serializers/errorSerializer');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
 
 // instance of koa

@@ -1,10 +1,10 @@
 'use strict';
 
 const Router = require('koa-router');
-const logger = require('logger');
-const ConverterService = require('services/converterService');
-const SQLService = require('services/sqlService');
-const ResultSerializer = require('serializers/resultSerializer');
+const logger = require('../../../logger');
+const ConverterService = require('../../../services/converterService');
+const SQLService = require('../../../services/sqlService');
+const ResultSerializer = require('../../../serializers/resultSerializer');
 const Sql2json = require('sql2json').sql2json;
 const Json2sql = require('sql2json').json2sql;
 const router = new Router({

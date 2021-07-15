@@ -1,12 +1,12 @@
 'use strict';
 
-const logger = require('logger');
-const SQLService = require('services/sqlService');
+const logger = require('../logger');
+const SQLService = require('../services/sqlService');
 const geojsonToArcGIS = require('arcgis-to-geojson-utils').geojsonToArcGIS;
 const arcgisToGeoJSON = require('arcgis-to-geojson-utils').arcgisToGeoJSON;
 const Sql2json = require('sql2json').sql2json;
 const Json2sql = require('sql2json').json2sql;
-const QueryNotValid = require('errors/queryNotValid');
+const QueryNotValid = require('../errors/queryNotValid');
 
 const aggrFunctions = ['count', 'sum', 'min', 'max', 'avg', 'stddev', 'var'];
 const aggrFunctionsRegex = /(count *\(|sum\(|min\(|max\(|avg\(|stddev\(|var\(){1}[A-Za-z0-9_]*/g;
