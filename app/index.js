@@ -1,1 +1,2 @@
-require('./src/app');
+// require('heapdump');
+require('app');

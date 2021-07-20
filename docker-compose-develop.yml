@@ -2,16 +2,14 @@ version: "3"
 services:
   develop:
     build: .
-    container_name: converter-develop
     ports:
       - "4100:4100"
-    env_file:
-      - dev.env
+    container_name: converter-develop
     environment:
       NODE_ENV: dev
-      API_VERSION: v1
-      CT_REGISTER_MODE: auto
+      NODE_PATH: ./app/src
+      PORT: 4100
+      FASTLY_ENABLED: "false"
     command: develop
     volumes:
       - ./app:/opt/converter/app
-
